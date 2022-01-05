@@ -1,1 +1,30 @@
 /* style.css */
+
+#idSelector {
+  color: orange;
+  font-weight: lighter;
+}
+
+[data-heading-level="subtitle"] {
+  font-style: italic;
+  text-decoration: overline;
+}
+
+.classSelector {
+  color: orangered;
+  text-decoration: line-through;
+}
+
+h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h3 {
+  font-style: oblique;
+  text-decoration: underline;
+}
+
+* {
+  color: hsla(212, 100%, 10%, 0.7);
+  font-style: normal;
+}
