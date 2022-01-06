@@ -1,1 +1,17 @@
 /* style.css */
+
+/* Specificity
+
+elements = 0,0,1
+classes & attribute selectors = 0,1,0
+ids = 1,0,0
+inline styles = 1,0,0,0
+!important = 1,0,0,0,0
+
+*/
+
+/*
+The rules are applied from top to bottom, 
+that is, to the same specificity, 
+the last one found will be the one applied.
+*/
