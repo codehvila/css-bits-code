@@ -1,1 +1,45 @@
 /* style.css */
+
+.box {
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.hi {
+  background-color: lightcoral;
+  border: 10px solid red;
+}
+
+.bla {
+  background-color: rgb(232, 111, 243);
+  border: 10px solid rgb(0, 162, 255);
+  display: inline-block;
+}
+
+.blo {
+  background-color: rgb(232, 111, 243);
+  border: 10px solid rgb(0, 162, 255);
+  display: inline-block;
+}
+
+.blu {
+  background-color: rgb(232, 111, 243);
+  border: 10px solid rgb(0, 162, 255);
+  display: inline-block;
+}
+
+.excuse {
+  background-color: rgb(128, 240, 193);
+  border: 5px solid rgb(88, 180, 233);
+  display: inline; /* height and width dont apply here because display is set to inline */
+  padding: 20px;
+  opacity: 0.7;
+}
+
+.bye {
+  background-color: rgb(128, 199, 240);
+  border: 10px solid rgb(0, 255, 115);
+  box-sizing: border-box;
+}
