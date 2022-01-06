@@ -1,1 +1,28 @@
 /* style.css */
+
+ul {
+  color: hsla(130, 80%, 30%, 0.8);
+}
+
+li {
+  /* All childs li elements inherit from father element 
+     some styles properties applied to text, like color, 
+     font-size, font-family, and so on. Don't inherit 
+     properties like margin, padding, height, width, etc. */
+}
+
+.hot {
+  color: orange;
+}
+
+.gas {
+  color: grey;
+}
+
+.green {
+  color: inherit; /* inherit color property from parent element */
+}
+
+.cold {
+  color: initial; /* inherit color property from browser default cascading style sheet */
+}
