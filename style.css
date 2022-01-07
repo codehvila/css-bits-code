@@ -1,1 +1,93 @@
 /* style.css */
+
+/* Browser Default font-size: 16px;  */
+
+/** Relative length units **/
+
+/* em & rem are referred to as a relative unit.
+
+   em is referred to font-size property of the parent, 
+   in the case of typographical properties like font-size,
+   and font-size of the element itself, in case of other properties like width.
+
+   rem is referred to font-size of the root element.
+*/
+
+.venus {
+  font-size: initial;
+  padding: 2em;
+  margin: 1em;
+}
+
+.atmosphere {
+  font-size: 24px;
+  border: 10px solid blue;
+}
+
+.earth {
+  font-size: 2em; /* em refers to parent's font-size. Here .atmosphere. 
+                     So 1em is equal to 24px. 2em = to 48px. */
+  padding: 2em; /* padding, margin, height, width em refers to self 
+                   font-size element. Here .earth. So 1em padding is equal 
+                   to 48px. 2em = 96px */
+}
+
+.mars {
+  font-size: inherit;
+  padding: 0.5em;
+}
+
+.jupiter {
+  font-size: 28px;
+  padding: 2rem;
+  margin: 1rem; /* rem refers to font-size of the root element. 
+                   Wich is by default equal to 16px. */
+}
+
+.saturn {
+  font-size: 1vh; /* 1% of the viewport's height */
+  /* font-size: 1vw; /* 1% of the viewport's width */
+  padding: 2em;
+}
+
+.uranus {
+  font-size: 1vmin; /* 1% of the viewport's smaller dimension */
+  /* font-size: 1vmax; /* 1% of the viewport's larger dimension */
+  padding: 2em;
+}
+
+.neptune {
+  font-size: 6ex; /* x-height of the element's font */
+  /* font-size: 6ch; /* The advance measure (width) of the glyph "O" of the element's font */
+  /* font-size: 6lh; /* Line height of the element */
+}
+
+/** Absolute length units **/
+
+.neptune {
+  font-size: 2cm; /* Centimeters */
+  font-size: 10mm; /* Millimeters */
+  font-size: 12q; /* Quarter-millimeters */
+  font-size: 2in; /* Inches */
+  font-size: 12pc; /* Picas */
+  font-size: 12pt; /* Points */
+  /* font-size: 12px; */
+}
+
+/** Percentages **/
+/* Percentage are always relative to some other value. */
+.milkyWay {
+  width: 480px;
+  padding: 32px;
+  background-color: hsl(54, 40%, 80%);
+}
+.milkyWay::before {
+  font-size: 1rem;
+  content: "I'm the Milky Way";
+}
+.sun {
+  font-size: 200%;
+  color: hsl(54, 80%, 50%);
+  border: 10px solid orange;
+  width: 50%;
+}
