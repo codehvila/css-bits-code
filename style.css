@@ -1,1 +1,86 @@
 /* style.css */
+
+div.wrapper {
+  visibility: hidden; /* visible | hidden */
+  opacity: 0; /* 0...1 */
+}
+.wrapper {
+  display: none; /* none, inline, block, inline-block, flex, ... */
+}
+
+.point {
+  width: 26px;
+  height: 26px;
+  background-color: orangered;
+  display: inline-block;
+  border-radius: 50%;
+  animation: pulse 1100ms 1s 3;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: orangered 0 0 0 0;
+  }
+  70% {
+    box-shadow: #ff69b400 0 0 0 16px;
+  }
+}
+
+p {
+  opacity: 0;
+  font-size: 32px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 900;
+}
+
+p.transition {
+  display: inline-block;
+  transition: 1s;
+  opacity: 1;
+}
+
+.first {
+    animation-delay: 0.4s;
+}
+
+.second {
+    animation-delay: 0.7s;
+}
+
+.third {
+    animation-delay: 0.85s;
+
+}
+
+.slidein {
+  opacity: 1;
+  /* animation-delay: 0.4s; */
+  animation-direction: alternate;
+  animation-duration: 0.7s;
+  animation-iteration-count: 1;
+  animation-name: slidein;
+  animation-play-state: running;
+  animation-timing-function: cubic-bezier(.36,.32,0,1.23); /* ease */
+  animation-fill-mode: forwards;
+
+
+  /* animation: pslidein 10s 2s 3; */
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 400%;
+  }
+  30% {
+    width: 190%;
+  }
+
+  90% { width: 100% }
+
+  to {
+    margin-left: 0%;
+    width; 100%;
+  }
+}
