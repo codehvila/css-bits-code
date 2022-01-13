@@ -1,1 +1,34 @@
 /* style.css */
+
+a:link {
+  border-bottom: lawngreen dotted 3px;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: lawngreen solid 3px;
+}
+
+ul li:first-child {
+  color: blue;
+}
+
+ul li:last-child {
+  color: violet;
+}
+
+input {
+  border: 1px solid grey;
+}
+
+input:hover {
+  border: green solid 2px;
+}
+
+input:focus {
+  border: goldenrod solid 3px;
+}
+
+article p:first-child::first-line {
+  font-weight: bold;
+}
