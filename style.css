@@ -1,1 +1,113 @@
 /* style.css */
+:root {
+  --static: static;
+  --relative: relative;
+  --absolute: absolute;
+  --sticky: sticky;
+  --fixed: fixed;
+
+  --parent: var(--static);
+  --child: var(--absolute);
+  --section: var(--relative);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 6px;
+  z-index: 1001;
+  width: 100%;
+}
+
+section {
+  margin: 2rem 8rem;
+  position: var(--section);
+  border: 1px solid blueviolet;
+}
+
+#sectionPositionForm,
+#parentPositionForm,
+#childPositionForm {
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 0.6rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  position: static;
+  top: 4px;
+  z-index: 1001;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+#sectionPositionForm {
+  background-color: rgba(241, 50, 75, 0.5);
+}
+
+#parentPositionForm {
+  background-color: rgba(247, 105, 124, 0.5);
+}
+
+#childPositionForm {
+  background-color: hsl(351, 100%, 86%, 0.5);
+}
+
+#sectionPositionForm div,
+#parentPositionForm div,
+#childPositionForm div {
+  display: flex;
+  align-items: center;
+}
+
+.parent {
+  margin-top: 48px;
+  padding: 16px;
+  border: solid 4px #333;
+  position: var(
+    --parent
+  ); /* default property. If this property is not present,
+                       it is as if it were defined as static. */
+  /* position: relative; */
+}
+
+.height {
+  height: 350px;
+}
+
+.child {
+  padding: 16px;
+  background-color: lightcoral;
+  position: static; /* default */
+  position: relative;
+  position: var(
+    --child
+  ); /* If parent is relative child refers to them. 
+                         If parent is static, child refers to first 
+                         parent element positioned to relative, if it
+                         does not exist, to root element.  */
+  /* position: sticky; */ /* Parent element has to have height property set */
+  /* position: fixed; */ /* Position refered to viewport */
+  top: 30px; /* Does no affect static elements */
+  right: 60px; /* Does no affect static elements */
+  left: 90px; /* Does no affect static elements */
+  /* bottom: 128px; */ /* Does no affect static elements */
+}
+
+.red {
+  background-color: red;
+  border-radius: 16px;
+  /* z-index: 1000; */
+}
+
+.green {
+  background-color: green;
+}
+
+/* https://www.designcise.com/web/tutorial/how-to-fix-issues-with-css-position-sticky-not-working */

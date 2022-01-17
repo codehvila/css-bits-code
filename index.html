@@ -2,16 +2,164 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
     <title>CSS Bits Code</title>
 </head>
 
 <body>
-
+    <header>
+        <form id="sectionPositionForm" action="">
+            <h3>section</h3>
+            <div>
+                <input type="radio" name="sectionposition" value="static" id="sectionstatic" /><label
+                    for="static">Static</label>
+            </div>
+            <div>
+                <input type="radio" name="sectionposition" value="relative" id="sectionrelative" /><label
+                    for="relative">Relative</label>
+            </div>
+            <div>
+                <input type="radio" name="sectionposition" value="absolute" id="sectionabsolute" /><label
+                    for="absolute">Absolute</label>
+            </div>
+            <div>
+                <input type="radio" name="sectionposition" value="sticky" id="sectionsticky" /><label
+                    for="sticky">Sticky</label>
+            </div>
+            <div>
+                <input type="radio" name="sectionposition" value="fixed" id="sectionfixed" /><label
+                    for="fixed">Fixed</label>
+            </div>
+            <div><button name="reset" type="reset">Reset</button></div>
+        </form>
+        <form id="parentPositionForm" action="">
+            <h3>.parent</h3>
+            <div>
+                <input type="radio" name="parentposition" value="static" id="parentstatic" /><label
+                    for="static">Static</label>
+            </div>
+            <div>
+                <input type="radio" name="parentposition" value="relative" id="parentrelative" /><label
+                    for="relative">Relative</label>
+            </div>
+            <div>
+                <input type="radio" name="parentposition" value="absolute" id="parentabsolute" /><label
+                    for="absolute">Absolute</label>
+            </div>
+            <div>
+                <input type="radio" name="parentposition" value="sticky" id="parentsticky" /><label
+                    for="sticky">Sticky</label>
+            </div>
+            <div>
+                <input type="radio" name="parentposition" value="fixed" id="parentfixed" /><label
+                    for="fixed">Fixed</label>
+            </div>
+            <div><button name="reset" type="reset">Reset</button></div>
+        </form>
+        <form id="childPositionForm" action="">
+            <h3>.child</h3>
+            <div>
+                <input type="radio" name="childposition" value="static" id="childstatic" /><label
+                    for="static">Static</label>
+            </div>
+            <div>
+                <input type="radio" name="childposition" value="relative" id="childrelative" /><label
+                    for="relative">Relative</label>
+            </div>
+            <div>
+                <input type="radio" name="childposition" value="absolute" id="childabsolute" /><label
+                    for="absolute">Absolute</label>
+            </div>
+            <div>
+                <input type="radio" name="childposition" value="sticky" id="childsticky" /><label
+                    for="sticky">Sticky</label>
+            </div>
+            <div>
+                <input type="radio" name="childposition" value="fixed" id="childfixed" /><label
+                    for="fixed">Fixed</label>
+            </div>
+            <div><button name="reset" type="reset">Reset</button></div>
+        </form>
+    </header>
+    <div class="parent" style="margin-top: 140px">
+        <p>parent</p>
+        <div class="child">child</div>
+    </div>
+    <section>
+        <p>section</p>
+        <h1>Positioning HTML Elements</h1>
+        <p class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            consequuntur reprehenderit laborum fuga nulla enim veritatis expedita
+            possimus maiores reiciendis, sequi nobis explicabo quibusdam laudantium,
+            repellendus deleniti. Fugit, ipsum neque! Enim iusto earum nobis ducimus
+            atque possimus, consectetur corrupti. Laudantium unde facere et itaque
+            quia rerum ut aspernatur nostrum, officia voluptate necessitatibus ipsum
+            dicta saepe delectus, iusto rem corrupti cupiditate. Repellendus minus
+            labore tempora eius voluptas iure. Repellat officia natus fugiat esse
+            quidem enim, fuga ut. Omnis odio molestiae animi et praesentium dolore
+            maxime totam, nostrum voluptate dolorem voluptas reprehenderit! Harum,
+            sit corrupti? In perferendis beatae eius reprehenderit quisquam ipsum
+            perspiciatis distinctio aperiam dignissimos impedit, illo placeat sit.
+            Nulla cum a at fuga ullam repellendus harum, laudantium minus alias eum!
+        </p>
+        <div class="parent height">
+            <p>parent</p>
+            <div class="child red">child</div>
+        </div>
+        <p class="content">
+            Vero perferendis iure dignissimos minima animi magni, quae facere
+            excepturi ab maxime molestiae odio! Eos aperiam suscipit ullam, quaerat
+            quasi itaque doloribus assumenda nostrum provident voluptatibus, quis
+            sapiente labore veniam. Omnis optio cumque porro, ducimus ullam
+            quibusdam commodi earum voluptatibus laboriosam molestias suscipit
+            temporibus quia assumenda tempora. Tempore voluptatem fugit consequatur!
+            Enim beatae ea, totam odit quasi omnis nobis qui. Reiciendis ullam
+            possimus quidem alias inventore ducimus enim sequi! Odit, est excepturi?
+            Inventore, magni eius facilis minima perspiciatis laudantium fugit iusto
+            quis asperiores consequatur impedit ut voluptatem fugiat eveniet animi.
+            Unde dignissimos, ullam dicta ipsum atque assumenda iure ex vero fugit
+            illum! Repellat est recusandae, expedita aspernatur, libero porro minima
+            pariatur iste velit vel nesciunt labore eius. Enim, beatae vitae?
+            Suscipit facilis animi repellendus deserunt, asperiores magnam
+            architecto ex, totam exercitationem quo expedita ipsam eius aperiam fuga
+            molestiae illum officia sunt sequi reiciendis nobis iste consectetur,
+            iusto fugiat facere. Quas.
+        </p>
+        <p class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias porro
+            qui maiores dolor illo, animi minima explicabo sunt esse magnam
+            corporis? Magnam recusandae natus rem laudantium exercitationem ex
+            molestiae quod.
+        </p>
+        <div class="parent">
+            <p>parent</p>
+            <div class="child green">child</div>
+        </div>
+        <p class="content">
+            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis
+                fugiat ex dicta? Deserunt sunt fugiat fuga dicta ab sequi perferendis?
+                Ipsum, qui non rem voluptatum tenetur numquam cumque. Qui,
+                officiis.</span><span>Consectetur totam nostrum alias dignissimos nisi debitis quibusdam
+                expedita veniam sequi sapiente voluptatum, maiores ut natus, veritatis
+                culpa non dolor, maxime quos ipsum ratione dicta officia numquam illo!
+                Soluta, consectetur.</span><span>Ut ratione dolor unde maxime dolorem illum nisi alias voluptatibus
+                facilis. Quasi velit unde id, aut in repellendus excepturi voluptate
+                tempore? Maxime atque voluptate ipsa corrupti minus quas delectus.
+                Sint!</span><span>Vitae atque recusandae tenetur molestias! Assumenda laborum aperiam
+                vero quidem! Consectetur obcaecati eaque minus non perferendis rem a
+                consequatur in veritatis aut distinctio magnam ipsum sed, rerum
+                suscipit, quidem veniam.</span><span>Earum perferendis dolorem ipsum sit laborum molestias, assumenda
+                nam
+                doloribus eum, atque consectetur. Provident voluptate vitae corrupti
+                accusantium tempore saepe, facere, mollitia fugit esse ab perferendis
+                harum cum deleniti tenetur.</span>
+        </p>
+    </section>
     <script src="index.js"></script>
 </body>
 
