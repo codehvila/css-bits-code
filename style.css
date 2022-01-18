@@ -1,1 +1,37 @@
 /* style.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-left: -40px;
+  font-size: 1.3em;
+  list-style-type: none;
+}
+
+@media (max-width: 640px) {
+  .navbar {
+    display: block;
+  }
+}
+
+@media (min-width: 944px) {
+  .header {
+    display: flex;
+    justify-content: center;
+  }
+  .nav {
+    width: 944px;
+  }
+}
+
+/* 
+   @media all/print/screen/speech (...) and/not/only/, (...)
+   min-height: 
+   max-height:
+   orientation: portrait
+   orientation: landscape 
+   resolution: 
+   color: 
+   scripting: 
+   https://developer.mozilla.org/en-us/docs/Web/CSS/Media_Queries/Using_media_queries
+   */
